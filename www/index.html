@@ -45,24 +45,27 @@
 <body>
 
 
-    <div class="app">
+   <!-- <div class="app">
         <h1>PhoneGap</h1>
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
             <p id="bt" class="event listening">xx</p>
         </div>
-    </div>
+    </div>-->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
-		window.addEventListener("batterylow", onBatteryLow, false);
-
-function onBatteryLow(status) {
-    alert("Battery Level Low " + status.level + "%");
-	document.getElementById("bt").innerHTML="Battery Level Low " + status.level + "%";
-}
+		document.addEventListener("deviceready", onDeviceReady, false);  
+  
+            function onDeviceReady() {  
+                var element = document.getElementById('deviceProperties');  
+          
+                element.innerHTML = 'Device UUID: '     + device.uuid     + '<br />' +   
+                               
+                                    'Device Version: '  + device.version  + '<br />';  
+            }  
     </script>
 </body>
 
