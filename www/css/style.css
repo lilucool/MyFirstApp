@@ -1,0 +1,27 @@
+/* Empty. Add your own CSS if you like */
+
+.button.active, .button.activated {
+    border-color:transparent;
+    background-color: #e5e5e5; 
+}
+
+.button-bar {
+   display: inherit;
+   text-align: center;
+}
+
+.button-bar > .button {
+   display: inline-block;
+   margin-bottom:3px;
+   
+}
+.button-bar > .button:first-child {
+	border-radius: 0px 0px 0px 0px;
+}
+
+.button-bar > .button:last-child {
+	border-radius: 0px 0px 0px 0px;
+}
+.button {
+	    min-width: 80px;
+	}
