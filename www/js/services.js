@@ -6,29 +6,29 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
+    name: '屏障',
+    lastText: '屏障屏障召唤师等级：1级',
+    face: 'img/Skill/SummonerBarrier.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
+    name: '净化',
+    lastText: '召唤师等级：1级',
+    face: 'img/Skill/SummonerBoost.png'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
+    name: '洞察',
+    lastText: '召唤师等级：1级',
+    face: 'img/Skill/SummonerClairvoyance.png'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
+    name: '引燃',
+    lastText: '召唤师等级：1级',
+    face: 'img/Skill/SummonerDot.png'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
+    name: '虚弱',
+    lastText: '召唤师等级：1级',
+    face: 'img/Skill/SummonerExhaust.png'
   }];
 
   return {
