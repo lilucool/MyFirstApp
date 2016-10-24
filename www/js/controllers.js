@@ -1,7 +1,10 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope, Heros) {
-	
+	 
+	$scope.click = function(num) {
+		$scope.var = num; 
+		}
 	 $scope.heros = Heros.all();
   $scope.remove = function(hero) {
     Heros.remove(hero);
