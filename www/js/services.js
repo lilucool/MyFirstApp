@@ -8,26 +8,31 @@ angular.module('starter.services', [])
     id: 0,
     name: '屏障',
     lastText: '屏障屏障召唤师等级：1级',
+	content:'为你的英雄套上护盾，吸收115-455（取决于英雄等级）点伤害，持续2秒。',
     face: 'img/Skill/SummonerBarrier.png'
   }, {
     id: 1,
     name: '净化',
     lastText: '召唤师等级：1级',
+	content:'移除身上的所有限制效果和召唤师技能的减益效果，并且若在接下来的3秒里再次被施加限制效果时，新效果的持续时间会减少65%。',
     face: 'img/Skill/SummonerBoost.png'
   }, {
     id: 2,
     name: '洞察',
     lastText: '召唤师等级：1级',
+	content:'将地图上任意一块区域暴露给你的队伍，持续5秒。',
     face: 'img/Skill/SummonerClairvoyance.png'
   }, {
     id: 3,
     name: '引燃',
     lastText: '召唤师等级：1级',
+	content:'引燃是对单体敌方目标施放的持续性伤害技能，在5秒的持续时间里造成70-410（取决于英雄等级）真实伤害，获得目标的视野，并减少目标所受的治疗和回复效果。',
     face: 'img/Skill/SummonerDot.png'
   }, {
     id: 4,
     name: '虚弱',
     lastText: '召唤师等级：1级',
+	content:'虚弱目标敌方英雄，降低目标英雄30%的移动速度和攻击速度，以及10护甲与魔法抗性，并且他们所造成的伤害减少40%，持续2.5秒。',
     face: 'img/Skill/SummonerExhaust.png'
   }];
 

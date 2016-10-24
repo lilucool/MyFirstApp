@@ -6,9 +6,10 @@
 -->
 <ion-view view-title="{{hero.name}}">
   <ion-content class="padding">
-    <img ng-src="./img/100x100.jpg" style="width: 64px; height: 64px">
+   
+    <img ng-src="./img/Hero/{{hero.shortname}}.png" style="width: 64px; height: 64px" />
     <p>
-     {{hero}}
+     {{hero.bio}}
     </p>
   </ion-content>
 </ion-view>
