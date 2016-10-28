@@ -13,10 +13,16 @@
 .button-bar > .button {
    display: inline-block;
    margin-bottom:3px;
-   width:13%;
+   width:14.2%;
    padding: 0px;
+ 
    
 }
+.button-bar > .button-last {
+   padding-right:0px;
+   
+}
+
 .button-bar > .button:first-child {
 	border-radius: 0px 0px 0px 0px;
 }
