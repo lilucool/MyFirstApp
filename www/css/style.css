@@ -13,7 +13,7 @@
 .button-bar > .button {
    display: inline-block;
    margin-bottom:3px;
-   width:14.2%;
+   width:14%;
    padding: 0px;
  
    
@@ -29,6 +29,7 @@
 
 .button-bar > .button:last-child {
 	border-radius: 0px 0px 0px 0px;
+	width:16%;
 }
 .button {
 	   /* min-width: 80px;*/
