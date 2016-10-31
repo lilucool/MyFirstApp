@@ -6,10 +6,35 @@
 -->
 <ion-view view-title="{{hero.name}}">
   <ion-content class="padding">
-   
-    <img ng-src="./img/Hero/{{hero.shortname}}.png" style="width: 64px; height: 64px" />
+   <div id="hero-detail-content" >
+   <!-- <img ng-src="./img/Hero/{{hero.shortname}}.png" style="width: 64px; height: 64px" />-->
+    <img ng-src="../img/Hero/Aatrox/big.jpg" style=" width:100%; height:auto"/>
+    <h4>技能介绍</h4>
+   <div id="hero-detail-skill">
+   	<a><img src="../img/Hero/Aatrox/Aatrox_Passive.png" style="width: 64px; height: 64px"/></a><a><img src="../img/Hero/Aatrox/AatroxQ.png" style="width: 64px; height: 64px"/><a><img src="../img/Hero/Aatrox/AatroxW.png" style="width: 64px; height: 64px"/></a><a><img src="../img/Hero/Aatrox/AatroxE.png" style="width: 64px; height: 64px"/></a><a><img src="../img/Hero/Aatrox/AatroxR.png" style="width: 64px; height: 64px"/></a></div>
     <p>
      {{hero.bio}}
-    </p>
+    </p></div>
+   
+	<section>
+		<ul ng-init="tab = 1">
+			<li ng-class="{active:tab===1}"> 
+				<a href ng-click="tab = 1">What you eat?</a>	
+			</li>
+			<li ng-class="{active:tab===2}"> 
+				<a href ng-click="tab = 2">Favorite juice?</a> 
+			</li>
+			<li ng-class="{active:tab===3}"> 
+				<a href ng-click="tab = 3">Do you close your eyes?</a> 
+			</li>
+			<br><br>
+			<p ng-show="tab === 1"> I eat chocolates, alive! </p>
+			<p ng-show="tab === 2"> I drink pulpy orange juice, mango milk shake... </p>
+			<p ng-show="tab === 3"> yeah, I sleep at weekend. I am human... :D</p>
+		</ul>		
+	</section>		
+
+    
+    
   </ion-content>
 </ion-view>

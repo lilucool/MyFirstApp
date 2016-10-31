@@ -39,3 +39,11 @@
 	   font-size:14px;
 	   padding:0px;
 	}
+#hero-detail-content{
+	padding:10px;
+	}
+#hero-detail-content a {
+	width:20%;
+	display:inline-block;
+	
+	}
