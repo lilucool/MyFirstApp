@@ -11,29 +11,35 @@
     <img ng-src="../img/Hero/Aatrox/big.jpg" style=" width:100%; height:auto"/>
     <h4>技能介绍</h4>
    <div id="hero-detail-skill">
-   	<a><img src="../img/Hero/Aatrox/Aatrox_Passive.png" style="width: 64px; height: 64px"/></a><a><img src="../img/Hero/Aatrox/AatroxQ.png" style="width: 64px; height: 64px"/><a><img src="../img/Hero/Aatrox/AatroxW.png" style="width: 64px; height: 64px"/></a><a><img src="../img/Hero/Aatrox/AatroxE.png" style="width: 64px; height: 64px"/></a><a><img src="../img/Hero/Aatrox/AatroxR.png" style="width: 64px; height: 64px"/></a></div>
-    <p>
-     {{hero.bio}}
-    </p></div>
-   
-	<section>
+   	<section>
 		<ul ng-init="tab = 1">
 			<li ng-class="{active:tab===1}"> 
-				<a href ng-click="tab = 1">What you eat?</a>	
-			</li>
-			<li ng-class="{active:tab===2}"> 
-				<a href ng-click="tab = 2">Favorite juice?</a> 
-			</li>
-			<li ng-class="{active:tab===3}"> 
-				<a href ng-click="tab = 3">Do you close your eyes?</a> 
+            
+				<a href ng-click="tab = 1"><img src="../img/Hero/Aatrox/Aatrox_Passive.png"/></a>	
+			</li><li ng-class="{active:tab===2}"> 
+				<a href ng-click="tab = 2"><img src="../img/Hero/Aatrox/AatroxQ.png"/></a> 
+			</li><li ng-class="{active:tab===3}"> 
+				<a href ng-click="tab = 3"><img src="../img/Hero/Aatrox/AatroxW.png"/></a> 
+</li><li ng-class="{active:tab===4}"> 
+				<a href ng-click="tab = 4"><img src="../img/Hero/Aatrox/AatroxE.png"/></a> 
+			</li><li ng-class="{active:tab===5}"> 
+				<a href ng-click="tab = 5"><img src="../img/Hero/Aatrox/AatroxR.png"/></a> 
 			</li>
 			<br><br>
-			<p ng-show="tab === 1"> I eat chocolates, alive! </p>
+			
+			
+		</ul><p ng-show="tab === 1"> I eat chocolates, alive! </p>
 			<p ng-show="tab === 2"> I drink pulpy orange juice, mango milk shake... </p>
 			<p ng-show="tab === 3"> yeah, I sleep at weekend. I am human... :D</p>
-		</ul>		
-	</section>		
-
+            <p ng-show="tab === 4"> I eat chocolates, alive! </p>
+			<p ng-show="tab === 5"> I drink pulpy orange juice, mango milk shake... </p>		
+	</section></div>
+    </div>
+   
+			
+<p>
+     {{hero.bio}}
+    </p>
     
     
   </ion-content>
