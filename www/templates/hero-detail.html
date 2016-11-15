@@ -19,52 +19,56 @@
           </ul>
           <div ng-show="tab === 1">
             <div class="skilltitle">
-              <h5>鲜血魔井</h5>
+              <h5>{{hero.skilltitle_1}}</h5>
               <em>被动技能</em></div>
-            <p class="skilltip">当使用消耗血量的技能时，亚托克斯会将生命消耗储存进血池。在受到致命伤害后，亚托克斯从血池中提取鲜血并在短时间内将之作为生命值回复。此外，魔井每储蓄2%的生命值，就会为亚托克斯提供1%攻击速度。</p>
+            <p class="skilltip">{{hero.skilltip_1}}</p>
           </div>
           <div ng-show="tab === 2">
             <div class="skilltitle">
-              <h5>黑暗之跃</h5>
+              <h5>{{hero.skilltitle_2}}</h5>
               <em>快捷键：Q</em></div>
-            <p class="skilltip">亚托克斯纵身一跃然后猛击向目标位置，对落点中心的敌人造成70/115/160/205/250(+0.6)物理伤害和持续1秒的击飞效果。</p>
+            <p class="skilltip">{{hero.skilltip_2}}</p>
             <ul class="skillstat">
-              <li>治疗效果：20/25/30/35/40</li>
-              <li>额外伤害：60/95/130/165/200</li>
+              <li>{{hero.skillstat_2a}}</li>
+              <li>{{hero.skillstat_2b}}</li>
+              <li>{{hero.skillstat_2c}}</li>
+              <li>{{hero.skillstat_2d}}</li>
             </ul>
           </div>
           <div ng-show="tab === 3">
             <div class="skilltitle">
-              <h5>血之渴望/血之报偿</h5>
+              <h5>{{hero.skilltitle_3}}</h5>
               <em>快捷键：W</em></div>
-            <p class="skilltip">关闭时：血之渴望：亚托克斯每第三次攻击会回复20/25/30/35/40(+0.25)生命值，此回复效果在半血以下时提升200%()。
-              
-              开启时：血之报偿：亚托克斯每第三次攻击会造成60/95/130/165/200(+1)额外物理伤害，同时他自身损失生命值。</p>
+            <p class="skilltip">{{hero.skilltip_3}}</p>
             <ul class="skillstat">
-              <li>治疗效果：20/25/30/35/40</li>
-              <li>额外伤害：60/95/130/165/200</li>
+              <li>{{hero.skillstat_3a}}</li>
+              <li>{{hero.skillstat_3b}}</li>
+              <li>{{hero.skillstat_3c}}</li>
+              <li>{{hero.skillstat_3d}}</li>
             </ul>
           </div>
           <div ng-show="tab === 4">
             <div class="skilltitle">
-              <h5>痛苦利刃</h5>
+              <h5>{{hero.skilltitle_4}}</h5>
               <em>快捷键：E</em></div>
-            <p class="skilltip"> 亚托克斯释放剑气，对命中的敌人造成75/110/145/180/215(+0.6)(+0.6)魔法伤害并减少他们40%移动速度，持续1.75/2/2.25/2.5/2.75秒。</p>
+            <p class="skilltip">{{hero.skilltip_4}}</p>
             <ul class="skillstat">
-              <li>伤害：75/110/145/180/215</li>
-              <li>减速时长：1.75/2/2.25/2.5/2.75</li>
-              <li>冷却时间：12/11/10/9/8</li>
+              <li>{{hero.skillstat_4a}}</li>
+              <li>{{hero.skillstat_4b}}</li>
+              <li>{{hero.skillstat_4c}}</li>
+              <li>{{hero.skillstat_4d}}</li>
             </ul>
           </div>
           <div ng-show="tab === 5">
             <div class="skilltitle">
-              <h5>浴血屠戮</h5>
+              <h5>{{hero.skilltitle_5}}</h5>
               <em>快捷键：R</em></div>
-            <p class="skilltip">亚托克斯从敌人身上抽取血液，对附近的敌方英雄造成200/300/400(+1)魔法伤害。每命中一个英雄会使鲜血魔井提升20%的储量，并为亚托克斯提供40/50/60%攻速加成和175攻击距离加成，持续12秒。</p>
+            <p class="skilltip">{{hero.skilltip_5}}</p>
             <ul class="skillstat">
-              <li>伤害：200/300/400</li>
-              <li>攻击速度：40/50/60%</li>
-              <li>冷却时间：100/85/70</li>
+             <li>{{hero.skillstat_5a}}</li>
+              <li>{{hero.skillstat_5b}}</li>
+              <li>{{hero.skillstat_5c}}</li>
+              <li>{{hero.skillstat_5d}}</li>
             </ul>
           </div>
         </section>
