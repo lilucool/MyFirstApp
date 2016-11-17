@@ -9,12 +9,12 @@
   <ion-content class="padding">
     <div id="hero-detail-content" > 
       <!-- <img ng-src="./img/Hero/{{hero.shortname}}.png" style="width: 64px; height: 64px" />--> 
-       <img ng-src="img/Hero/Aatrox/big.jpg" style=" width:100%; height:auto"/>
+       <img ng-src="img/Hero/{{hero.shortname}}/big.jpg" style=" width:100%; height:auto"/>
       <h4>技能介绍</h4>
       <div id="hero-detail-skill">
         <section>
           <ul ng-init="tab = 1" id="skill">
-            <li ng-class="{active:tab===1}"> <a href ng-click="tab = 1"><img src="img/Hero/Aatrox/Aatrox_Passive.png"/></a></li><li ng-class="{active:tab===2}"> <a href ng-click="tab = 2"><img src="img/Hero/Aatrox/AatroxQ.png"/></a></li><li ng-class="{active:tab===3}"> <a href ng-click="tab = 3"><img src="img/Hero/Aatrox/AatroxW.png"/></a></li><li ng-class="{active:tab===4}"> <a href ng-click="tab = 4"><img src="img/Hero/Aatrox/AatroxE.png"/></a></li><li ng-class="{active:tab===5}"> <a href ng-click="tab = 5"><img src="img/Hero/Aatrox/AatroxR.png"/></a></li>
+            <li ng-class="{active:tab===1}"> <a href ng-click="tab = 1"><img src="img/Hero/{{hero.shortname}}/P.png"/></a></li><li ng-class="{active:tab===2}"> <a href ng-click="tab = 2"><img src="img/Hero/{{hero.shortname}}/Q.png"/></a></li><li ng-class="{active:tab===3}"> <a href ng-click="tab = 3"><img src="img/Hero/{{hero.shortname}}/W.png"/></a></li><li ng-class="{active:tab===4}"> <a href ng-click="tab = 4"><img src="img/Hero/{{hero.shortname}}/E.png"/></a></li><li ng-class="{active:tab===5}"> <a href ng-click="tab = 5"><img src="img/Hero/{{hero.shortname}}/R.png"/></a></li>
             <br>
           </ul>
           <div ng-show="tab === 1">
