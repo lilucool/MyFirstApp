@@ -1,7 +1,14 @@
 
 <ion-view view-title="英雄">
   <ion-content class="padding"  ng-controller="DashCtrl">
+ 
     <div class="button-bar" style="padding:10px"> 
+     <div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="搜索" ng-model="searchString">
+  </label>
+</div>
     <a class="button" ng-click="myFilter = {}; click(19)" ng-class="{'button-positive':var==19}">全部</a><a class="button" ng-click="myFilter = {type: 1}; click(9)" ng-class="{'button-positive':var==9}">战士</a><a class="button" ng-click="myFilter = {type: 2}; click(2)" ng-class="{'button-positive':var==2}">法师</a><a class="button" ng-click="myFilter = {type: 3}; click(3)" ng-class="{'button-positive':var==3}">刺客</a><a class="button" ng-click="myFilter = {type: 4}; click(4)" ng-class="{'button-positive':var==4}">坦克</a><a class="button" ng-click="myFilter = {type: 5}; click(5)" ng-class="{'button-positive':var==5}">射手</a><a class="button" ng-click="myFilter = {type: 6}; click(6)" ng-class="{'button-positive':var==6}">辅助</a> 
     </div>
     
@@ -32,7 +39,7 @@
 -->
     
     <div class="row" style="display: -webkit-flex; -webkit-flex-wrap: wrap; display: flex; flex-wrap: wrap;">
-      <div class="col col-20" ng-repeat="hero in heros | filter:myFilter" > 
+      <div class="col col-20" ng-repeat="hero in heros | filter:myFilter | filter:searchText" > 
       <a href="#/tab/heros/{{hero.id}}">
      <img ng-src="./img/Hero/{{hero.shortname}}.png" width="100%" />
       <!--<img ng-src="./img/100x100.jpg" width="100%" />-->
