@@ -39,7 +39,7 @@
 -->
     
     <div class="row" style="display: -webkit-flex; -webkit-flex-wrap: wrap; display: flex; flex-wrap: wrap;">
-      <div class="col col-20" ng-repeat="hero in heros | filter:myFilter | filter:searchText" > 
+      <div class="col col-20" ng-repeat="hero in heros | filter:myFilter | searchFor:searchString" > 
       <a href="#/tab/heros/{{hero.id}}">
      <img ng-src="./img/Hero/{{hero.shortname}}.png" width="100%" />
       <!--<img ng-src="./img/100x100.jpg" width="100%" />-->
